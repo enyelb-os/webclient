@@ -8,6 +8,9 @@ import usePlaylistListPageStore from '@/stores/pages/playlists'
 import useArtistPageStore from '@/stores/pages/artist'
 
 import HomeView from '@/views/HomeView'
+
+import { extra } from '@/_extra/router'
+
 const Lyrics = () => import('@/views/LyricsView')
 const ArtistView = () => import('@/views/ArtistView')
 const NotFound = () => import('@/views/NotFound.vue')
@@ -209,6 +212,7 @@ const PageView = {
 }
 
 const routes = [
+    ...extra.routes,
     folder,
     playlists,
     playlistView,
@@ -235,6 +239,7 @@ const routes = [
 ]
 
 const Routes = {
+    ...extra.Routes,
     folder: folder.name,
     playlists: playlists.name,
     playlist: playlistView.name,

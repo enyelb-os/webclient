@@ -1,6 +1,7 @@
 <template>
     <ContextMenu />
     <Modal />
+    <ExtraModal />
     <Notification />
     <div id="drag-img" class="ellip2" style=""></div>
     <section
@@ -53,6 +54,8 @@ import { xl, xxl } from "./composables/useBreakpoints";
 // @small-components
 import ContextMenu from "@/components/ContextMenu.vue";
 import Modal from "@/components/modal.vue";
+import ExtraModal from "@/_extra/components/modal.vue";
+
 import Notification from "@/components/Notification.vue";
 
 // @app-grid-components
